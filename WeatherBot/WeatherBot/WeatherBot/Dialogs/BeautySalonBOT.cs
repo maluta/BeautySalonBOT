@@ -37,7 +37,7 @@ namespace WeatherBot.Dialogs
             string message = string.Empty;
 
             // Obtém o nome da cidade
-            var pedido = result.Entities.ToList();
+            var pedido = result.Entities.ToList(); 
 
             if (pedido != null)
             {
@@ -55,7 +55,40 @@ namespace WeatherBot.Dialogs
                            context,
                            PedidoConfirmAsync,
                            datas,
-                           "Não entendi!",
+                           "A agenda é:",
+                           promptStyle: PromptStyle.Auto);
+                }
+
+                else if ((pedido.Any(w => w.Entity.ToUpper().Equals("PÉ") || w.Entity.ToUpper().Equals("MÃO")) && (pedido.Any(w1 => w1.Entity.ToUpper().Equals("HOJE")))))
+                {
+                    string[] arrayDatas = new string[3];
+                    arrayDatas.SetValue(string.Format("Horário disponivel as {0}", "12h00"), 0);
+                    arrayDatas.SetValue(string.Format("Horário disponivel as {0}", "13h00"), 1);
+                    arrayDatas.SetValue(string.Format("Horário disponivel as {0}", "14h00"), 2);
+
+                    var datas = arrayDatas.OrderBy(c => c.ToString());
+
+                    PromptDialog.Choice(
+                           context,
+                           PedidoConfirmAsync,
+                           datas,
+                           "O horário são:",
+                           promptStyle: PromptStyle.Auto);
+                }
+                else if ((pedido.Any(a => a.Entity.ToUpper().Equals("MÃO") || a.Entity.ToUpper().Equals("PÉ")) && (pedido.Any(w1 => w1.Entity.ToUpper().Equals("AMANHÃ")))))
+                {
+                    string[] arrayDatas = new string[3];
+                    arrayDatas.SetValue(string.Format("{0} as {1}", RetornarData().ToShortDateString(), "11h00"), 0);
+                    arrayDatas.SetValue(string.Format("{0} as {1}", RetornarData().ToShortDateString(), "17h00"), 1);
+                    arrayDatas.SetValue(string.Format("{0} as {1}", RetornarData().ToShortDateString(), "20h00"), 2);
+
+                    var datas = arrayDatas.OrderBy(c => c.ToString());
+
+                    PromptDialog.Choice(
+                           context,
+                           PedidoConfirmAsync,
+                           datas.ToList(),
+                           "A agenda é:",
                            promptStyle: PromptStyle.Auto);
                 }
             }
@@ -123,11 +156,11 @@ namespace WeatherBot.Dialogs
                     var reply = context.MakeMessage();
                     reply.Attachments.Add(new HeroCard
                     {
-                        Title = "Open your location in bing maps!",
+                        Title = "Abrir a sua localização no bing maps!",
                         Buttons = new List<CardAction> {
                             new CardAction
                             {
-                                Title = "Your location",
+                                Title = "Sua localização",
                                 Type = ActionTypes.OpenUrl,
                                 Value = $"https://www.bing.com/maps/?v=2&cp={geo.Latitude}~{geo.Longitude}&lvl=16&dir=0&sty=c&sp=point.{geo.Latitude}_{geo.Longitude}_You%20are%20here&ignoreoptin=1"
                             }

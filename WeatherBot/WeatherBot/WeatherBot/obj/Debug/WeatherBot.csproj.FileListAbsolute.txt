@@ -127,7 +127,6 @@ C:\Users\ensilva\Desktop\WeatherBot\WeatherBot\WeatherBot\bin\zh-hans\Microsoft.
 C:\Users\ensilva\Desktop\WeatherBot\WeatherBot\WeatherBot\obj\Debug\WeatherBot.csprojResolveAssemblyReference.cache
 C:\Users\ensilva\Desktop\WeatherBot\WeatherBot\WeatherBot\obj\Debug\Bot Application.dll
 C:\Users\ensilva\Desktop\WeatherBot\WeatherBot\WeatherBot\obj\Debug\Bot Application.pdb
-C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\obj\Debug\WeatherBot.csproj.CoreCompileInputs.cache
 C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\bin\Bot Application.dll.config
 C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\bin\Bot Application.dll
 C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\bin\Bot Application.pdb
@@ -136,7 +135,11 @@ C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\b
 C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\bin\Microsoft.Bot.Builder.Autofac.dll
 C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\bin\Microsoft.Bot.Builder.dll
 C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\bin\Microsoft.Bot.Connector.dll
+C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\bin\Microsoft.IdentityModel.Logging.dll
 C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\bin\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\bin\Microsoft.IdentityModel.Tokens.dll
 C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\bin\Microsoft.Rest.ClientRuntime.dll
 C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\bin\Microsoft.WindowsAzure.Configuration.dll
 C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\bin\Newtonsoft.Json.dll
@@ -148,7 +151,11 @@ C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\b
 C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\bin\Microsoft.Bot.Builder.xml
 C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\bin\Microsoft.Bot.Builder.Autofac.xml
 C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\bin\Microsoft.Bot.Connector.xml
+C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\bin\Microsoft.IdentityModel.Logging.xml
 C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\bin\Microsoft.IdentityModel.Protocols.xml
+C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\bin\Microsoft.IdentityModel.Tokens.xml
 C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\bin\Microsoft.WindowsAzure.Configuration.xml
 C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\bin\Newtonsoft.Json.xml
 C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\bin\System.IdentityModel.Tokens.Jwt.xml
@@ -168,14 +175,7 @@ C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\b
 C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\bin\pt-BR\Microsoft.Bot.Builder.resources.dll
 C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\bin\ru\Microsoft.Bot.Builder.resources.dll
 C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
+C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\obj\Debug\WeatherBot.csproj.CoreCompileInputs.cache
 C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\obj\Debug\Bot Application.dll
 C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\obj\Debug\Bot Application.pdb
 C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\obj\Debug\WeatherBot.csprojResolveAssemblyReference.cache
-C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\bin\Microsoft.IdentityModel.Logging.dll
-C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\bin\Microsoft.IdentityModel.Protocols.dll
-C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\bin\Microsoft.IdentityModel.Tokens.dll
-C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\bin\Microsoft.IdentityModel.Logging.xml
-C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\bin\Microsoft.IdentityModel.Protocols.xml
-C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
-C:\Users\ensilva\source\repos\BeautySalonBOT2\WeatherBot\WeatherBot\WeatherBot\bin\Microsoft.IdentityModel.Tokens.xml
