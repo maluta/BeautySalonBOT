@@ -128,14 +128,31 @@ namespace WeatherBot.Dialogs
 
             // Mensagem que o bot vai devolver ao usuário
             //string message = "";
-            if (questao.ToUpper().Equals("SALAO"))
+            if (questao.ToUpper().Equals("SALÃO"))
             {
-                await context.Forward(new FacebookLocationDialog(), ResumeAfter, context, CancellationToken.None);
+                //await context.Forward(new FacebookLocationDialog(), ResumeAfter, context, CancellationToken.None);
+
+                var reply = context.MakeMessage();
+                reply.Attachments.Add(new HeroCard
+                {
+                    Title = "Abrir a sua localização no bing maps!",
+                    Buttons = new List<CardAction> {
+                            new CardAction
+                            {
+                                Title = "Sua localização",
+                                Type = ActionTypes.OpenUrl,
+                                Value = $"https://www.bing.com/maps/?v=2&cp=-23.5977319~-23.5977319&lvl=16&dir=0&sty=c&sp=point.-23.5977319_-46.6821862_You%20are%20here&ignoreoptin=1"
+                            }
+                        }
+
+                }.ToAttachment());
+
+                await context.PostAsync(reply);
             }
-            else
-            {
+            //else
+            //{
                 context.Wait(this.MessageReceived);
-            }
+            //}
 
             // Avisa ao contexto do bot para ele mandar a mensagem para o usuário via POST
             //await context.PostAsync(message);
@@ -148,11 +165,11 @@ namespace WeatherBot.Dialogs
         {
             var place = await result;
 
-            if (place != default(Place))
-            {
-                var geo = (place.Geo as JObject)?.ToObject<GeoCoordinates>();
-                if (geo != null)
-                {
+            //if (place != default(Place))
+            //{
+                //var geo = (place.Geo as JObject)?.ToObject<GeoCoordinates>();
+                //if (geo != null)
+                //{
                     var reply = context.MakeMessage();
                     reply.Attachments.Add(new HeroCard
                     {
@@ -162,23 +179,23 @@ namespace WeatherBot.Dialogs
                             {
                                 Title = "Sua localização",
                                 Type = ActionTypes.OpenUrl,
-                                Value = $"https://www.bing.com/maps/?v=2&cp={geo.Latitude}~{geo.Longitude}&lvl=16&dir=0&sty=c&sp=point.{geo.Latitude}_{geo.Longitude}_You%20are%20here&ignoreoptin=1"
+                                Value = $"https://www.bing.com/maps/?v=2&cp=-23.5977319~-23.5977319&lvl=16&dir=0&sty=c&sp=point.-23.5977319_-46.6821862_You%20are%20here&ignoreoptin=1"
                             }
                         }
 
                     }.ToAttachment());
 
                     await context.PostAsync(reply);
-                }
-                else
-                {
-                    await context.PostAsync("No GeoCoordinates!");
-                }
-            }
-            else
-            {
-                await context.PostAsync("No location extracted!");
-            }
+                //}
+                //else
+                //{
+                //    await context.PostAsync("No GeoCoordinates!");
+                //}
+            //}
+            //else
+            //{
+            //    await context.PostAsync("No location extracted!");
+            //}
 
             context.Wait(MessageReceived);
         }
